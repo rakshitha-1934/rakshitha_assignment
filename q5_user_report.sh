@@ -1,16 +1,10 @@
 #!/bin/bash
 
-# ==========================================
-# USER ACCOUNT REPORT SCRIPT (FULL MARKS)
-# ==========================================
 
 echo "====================================="
 echo "        USER ACCOUNT REPORT          "
 echo "====================================="
 
-# ------------------------------------------
-# 1️⃣ USER STATISTICS
-# ------------------------------------------
 
 TOTAL_USERS=$(wc -l < /etc/passwd)
 SYSTEM_USERS=$(awk -F: '$3 < 1000 {count++} END{print count}' /etc/passwd)
@@ -24,9 +18,6 @@ echo "System Users (UID < 1000): $SYSTEM_USERS"
 echo "Regular Users (UID >= 1000): $REGULAR_USERS"
 echo "Currently Logged In: $LOGGED_IN"
 
-# ------------------------------------------
-# 2️⃣ USER DETAILS TABLE
-# ------------------------------------------
 
 echo ""
 echo "=== REGULAR USER DETAILS ==="
@@ -51,9 +42,6 @@ do
     "$user" "$uid" "$home" "$shell" "$LAST_LOGIN"
 done
 
-# ------------------------------------------
-# 3️⃣ GROUP INFORMATION
-# ------------------------------------------
 
 echo ""
 echo "=== GROUP INFORMATION ==="
@@ -68,9 +56,6 @@ for(i in a) if(a[i]!="") count++;
 printf "%-20s %-10d\n",$1,count
 }' /etc/group
 
-# ------------------------------------------
-# 4️⃣ SECURITY CHECKS
-# ------------------------------------------
 
 echo ""
 echo "=== SECURITY ALERTS ==="
@@ -84,18 +69,13 @@ echo "$ROOT_USERS"
 
 echo ""
 
-# Users without passwords (requires sudo)
 echo "Users without passwords:"
 sudo awk -F: '($2=="!" || $2=="*" || $2=="") {print $1}' /etc/shadow 2>/dev/null
 
-# Inactive users
 echo ""
 echo "Inactive Users (Never Logged In):"
 lastlog | awk 'NR>1 && /Never logged/ {print $1}'
 
-# ------------------------------------------
-# BONUS 1️⃣ PASSWORD EXPIRY INFO
-# ------------------------------------------
 
 echo ""
 echo "=== BONUS: PASSWORD EXPIRY INFO ==="
@@ -107,9 +87,6 @@ do
     echo "$user -> Password Expires:$EXPIRY"
 done
 
-# ------------------------------------------
-# BONUS 2️⃣ SAVE REPORT TO HTML
-# ------------------------------------------
 
 HTML_FILE="user_report.html"
 
@@ -127,9 +104,6 @@ echo "</body></html>"
 echo ""
 echo "HTML report saved as: $HTML_FILE"
 
-# ------------------------------------------
-# BONUS 3️⃣ EMAIL REPORT
-# ------------------------------------------
 
 read -p "Do you want to email this report? (y/n): " EMAIL
 
@@ -139,9 +113,6 @@ if [ "$EMAIL" = "y" ]; then
     echo "Email sent (if mail configured)."
 fi
 
-# ------------------------------------------
-# BONUS 4️⃣ GRAPH (USER TYPE GRAPH)
-# ------------------------------------------
 
 echo ""
 echo "=== BONUS: USER GRAPH ==="

@@ -1,14 +1,9 @@
 #!/bin/bash
 
-# ==============================
-# SYSTEM INFORMATION DISPLAY
-# ==============================
 
-# Color Codes
 CYAN="\e[36m"
 RESET="\e[0m"
 
-# Variables
 USERNAME=$(whoami)
 HOSTNAME=$(hostname)
 DATETIME=$(date "+%Y-%m-%d %H:%M:%S")
@@ -18,11 +13,9 @@ HOME_DIR=$HOME
 USERS_ONLINE=$(who | wc -l)
 UPTIME=$(uptime -p)
 
-# Bonus Information
 DISK_USAGE=$(df -h / | awk 'NR==2 {print $5}')
 MEM_USAGE=$(free -h | awk '/Mem:/ {print $3 "/" $2}')
 
-# Output
 echo -e "${CYAN}=============================================="
 echo -e "||     SYSTEM INFORMATION DISPLAY          ||"
 echo -e "=============================================="
