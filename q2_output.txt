@@ -1,0 +1,59 @@
+======== FILE & DIRECTORY MANAGER ========
+1. List files
+2. Create directory
+3. Create file
+4. Delete file
+5. Rename file
+6. Search file
+7. Count files & directories
+8. View permissions
+9. Copy file
+10. Exit
+total 48K
+-rw-rw-r-- 1 kali kali  399 Feb 23 11:30 acess.log
+drwxrwxr-x 2 kali kali 4.0K Feb 23 11:09 backups
+-rw-rw-r-- 1 kali kali   72 Feb 23 11:30 log_report.csv
+-rw-rw-r-- 1 kali kali  645 Feb 24 10:59 q1_output.txt
+-rwxrwxr-x 1 kali kali 1.1K Feb 23 19:37 q1_system_info.sh
+-rwxrwxr-x 1 kali kali 1.2K Feb 23 19:38 q2_file_manager.sh
+-rw-rw-r-- 1 kali kali  208 Feb 24 10:59 q2_output.txt
+-rwxrwxr-x 1 kali kali 1.6K Feb 23 19:40 q3_log_analyzer.sh
+-rwxrwxr-x 1 kali kali 1.3K Feb 23 19:40 q4_backup.sh
+-rwxrwxr-x 1 kali kali 3.1K Feb 23 19:42 q5_user_report.sh
+-rw-rw-r-- 1 kali kali  429 Feb 24 10:58 README.txt
+-rw-rw-r-- 1 kali kali  193 Feb 23 19:42 user_report.html
+======== FILE & DIRECTORY MANAGER ========
+1. List files
+2. Create directory
+3. Create file
+4. Delete file
+5. Rename file
+6. Search file
+7. Count files & directories
+8. View permissions
+9. Copy file
+10. Exit
+Directory created.
+======== FILE & DIRECTORY MANAGER ========
+1. List files
+2. Create directory
+3. Create file
+4. Delete file
+5. Rename file
+6. Search file
+7. Count files & directories
+8. View permissions
+9. Copy file
+10. Exit
+Directory created.
+======== FILE & DIRECTORY MANAGER ========
+1. List files
+2. Create directory
+3. Create file
+4. Delete file
+5. Rename file
+6. Search file
+7. Count files & directories
+8. View permissions
+9. Copy file
+10. Exit

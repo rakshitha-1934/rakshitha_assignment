@@ -1,0 +1,34 @@
+==================================
+        LOG FILE ANALYSIS         
+==================================
+Log File: acess.log
+
+Total Entries: 7
+
+Unique IP Addresses:
+192.168.1.10
+192.168.1.20
+192.168.1.30
+192.168.1.40
+Total Unique IPs: 4
+
+Status Code Summary:
+      7 
+
+Most Accessed Page:
+      5 200
+
+Top 3 IP Addresses:
+      3 192.168.1.10
+      2 192.168.1.20
+      1 192.168.1.40
+
+========== BONUS ANALYSIS ==========
+Date Range:
+From: 20/Feb/2024:10:30:45]
+To  : 20/Feb/2024:10:36:55]
+
+Security Threat Detection (Multiple 403 errors):
+
+CSV report generated: log_report.csv
+==================================

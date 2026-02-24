@@ -1,0 +1,14 @@
+[36m==============================================
+||     SYSTEM INFORMATION DISPLAY          ||
+==============================================
+|| Username     : kali                   ||
+|| Hostname     : kali                   ||
+|| Date & Time  : 2026-02-24 10:59:08    ||
+|| OS           : Linux                  ||
+|| Current Dir  : /home/kali/rakshitha_assignment ||
+|| Home Dir     : /home/kali             ||
+|| Users Online : 1                      ||
+|| Uptime       : up 12 minutes          ||
+|| Disk Usage   : 26%                    ||
+|| Memory Usage : 787Mi/1.9Gi            ||
+==============================================[0m

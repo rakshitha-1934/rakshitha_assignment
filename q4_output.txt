@@ -1,0 +1,16 @@
+=== AUTOMATED BACKUP SCRIPT ===
+Backup Type:
+1. Simple copy
+2. Compressed archive (tar.gz)
+[*] Starting backup...
+[*] Source: .
+[*] Destination: backups
+Backup completed successfully!
+===== Backup Details =====
+File: backup_20260224_110127.tar.gz
+Location: backups
+Size: 40K
+Time taken: 0 seconds
+[*] Checking old backups...
+[*] Old backups cleaned (kept latest 5)
+[*] Log updated at backups/backup.log
